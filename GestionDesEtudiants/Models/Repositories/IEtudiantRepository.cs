@@ -17,5 +17,7 @@ namespace GestionDesEtudiants.Models.Repositories
 
         void Delete(int id);
 
+        List<TEntity> Search(String term);
+
     }
 }

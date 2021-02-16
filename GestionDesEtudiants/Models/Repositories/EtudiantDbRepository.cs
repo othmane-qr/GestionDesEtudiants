@@ -43,5 +43,13 @@ namespace GestionDesEtudiants.Models.Repositories
             db.SaveChanges();
 
         }
+        
+        public List<Etudiant> Search (String term)
+        {
+            var result = db.Etudiants.Where(b => b.Nom.Contains(term) || b.Prenom.Contains(term) || b.CIN.Contains(term)).ToList();
+            return result;
+
+
+        }
     }
 }

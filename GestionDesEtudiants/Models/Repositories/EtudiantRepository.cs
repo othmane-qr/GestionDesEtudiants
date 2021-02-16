@@ -46,6 +46,13 @@ namespace GestionDesEtudiants.Models.Repositories
             return etudiants;
         }
 
+      
+
+        public List<Etudiant> Search(string term)
+        {
+            return etudiants.Where(a => a.Nom.Contains(term)).ToList();
+        }
+
         public void Update(int id, Etudiant newEtudiant)
         {
             var etudiant = Find(id);

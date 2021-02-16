@@ -12,5 +12,6 @@ namespace GestionDesEtudiants.Models
         public string Prenom { get; set; }
         public string CIN { get; set; }
         public string Adresse { get; set; }
+
     }
 }

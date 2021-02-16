@@ -98,5 +98,11 @@ namespace GestionDesEtudiants.Controllers
                 return View();
             }
         }
+
+        public ActionResult Search  (string term)
+        {
+            var result = etudiantRepository.Search(term);
+            return View("Index", result);
+        }
     }
 }
