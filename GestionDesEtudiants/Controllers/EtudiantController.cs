@@ -1,5 +1,6 @@
 ﻿using GestionDesEtudiants.Models;
 using GestionDesEtudiants.Models.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -17,6 +18,7 @@ namespace GestionDesEtudiants.Controllers
         {
             this.etudiantRepository = etudiantRepository;
         }
+        [Authorize]
         // GET: EtudiantController
         public ActionResult Index()
         {

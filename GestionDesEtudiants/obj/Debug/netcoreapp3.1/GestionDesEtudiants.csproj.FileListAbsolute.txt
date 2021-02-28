@@ -201,3 +201,6 @@ C:\Users\Administrateur\Desktop\GestionDesEtudiants\GestionDesEtudiants\bin\Debu
 C:\Users\Administrateur\Desktop\GestionDesEtudiants\GestionDesEtudiants\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\Administrateur\Desktop\GestionDesEtudiants\GestionDesEtudiants\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\Administrateur\Desktop\GestionDesEtudiants\GestionDesEtudiants\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Administrateur\Desktop\GestionDesEtudiants\GestionDesEtudiants\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\Administrateur\Desktop\GestionDesEtudiants\GestionDesEtudiants\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Administrateur\Desktop\GestionDesEtudiants\GestionDesEtudiants\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Facebook.dll
