@@ -34,6 +34,7 @@ namespace GestionDesEtudiants
                 options.UseSqlServer(configuration.GetConnectionString("SqlCon"));
             
             });
+
             services.AddAuthentication()
                     .AddGoogle(options =>
                     {
@@ -47,11 +48,6 @@ namespace GestionDesEtudiants
                           options.AppId = configuration["App:FacebookClientId"];
                           options.ClientSecret = configuration["App:FacebookClientSecret"];
                       });
-
-
-
-
-
 
         }
 

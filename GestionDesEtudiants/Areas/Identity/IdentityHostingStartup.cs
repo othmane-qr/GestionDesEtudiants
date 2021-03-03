@@ -20,8 +20,14 @@ namespace GestionDesEtudiants.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("SqlCon")));
 
-                services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<UserContext>();
+                services.AddIdentity<User, IdentityRole>(options => {
+                    options.SignIn.RequireConfirmedAccount = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireUppercase = false;
+                })
+                    .AddEntityFrameworkStores<UserContext>()
+                    .AddDefaultUI()
+                    .AddDefaultTokenProviders();
             });
         }
     }
